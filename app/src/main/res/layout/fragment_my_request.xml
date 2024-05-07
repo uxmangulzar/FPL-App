@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.MyRequestFragment">
+
+    <include
+        android:id="@+id/rq_s_bar"
+        layout="@layout/search_bar_design">
+
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/req_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rq_s_bar"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp16">
+
+        <RelativeLayout
+            android:id="@+id/tc_img"
+            android:layout_width="@dimen/dp46"
+            android:layout_height="@dimen/dp42"
+            android:background="@drawable/bg_icon">
+
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_chat"></ImageView>
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp17"
+            android:layout_toRightOf="@+id/tc_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotobold"
+                android:text="Requests"
+                android:textColor="@color/heading_top"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp1"
+                android:fontFamily="@font/robotoregular"
+                android:text="You can view your requests here"
+                android:textColor="@color/gray"
+                android:textSize="12sp">
+
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- TODO: For Request Layout Design -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/req_rel">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_req_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+
+    <!-- TODO: If user have no request fragment layout -->
+    <LinearLayout
+        android:id="@+id/no_request_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="176dp"
+            android:layout_height="131dp"
+            android:layout_gravity="center"
+            android:src="@drawable/request_empty">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp40"
+            android:fontFamily="@font/robotobold"
+            android:text="No Requests Yet!"
+            android:textColor="@color/heading_top"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp16"
+            android:fontFamily="@font/robotoregular"
+            android:text="You have not posted any Request. You can"
+            android:textColor="@color/heading_top"
+            android:textSize="12sp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/show_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotoregular"
+                android:text="Add New Request"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp5"
+                android:fontFamily="@font/robotoregular"
+                android:text="by Pressing Here"
+                android:textAlignment="center"
+                android:textColor="@color/secondary_text"
+                android:textSize="12sp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

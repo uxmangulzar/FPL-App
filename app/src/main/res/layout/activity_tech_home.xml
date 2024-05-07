@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infideap.drawerbehavior.AdvanceDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tech_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg_tech"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/tech_app_bar_default"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/tech_nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/gradient_bg_tech"
+        >
+
+        <include
+            android:id="@+id/navigation_design"
+            layout="@layout/navigation_design_tech"></include>
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</com.infideap.drawerbehavior.AdvanceDrawerLayout>

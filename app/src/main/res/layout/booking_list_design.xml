@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bookingClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp10"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp16">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginEnd="@dimen/dp20">
+
+                <TextView
+                    android:id="@+id/id_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="ID: "
+                    android:textColor="@color/heading_top"
+                    android:textSize="18sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/req_id_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/id_txt"
+                    android:fontFamily="@font/robotobold"
+                    android:text="FXEXW6"
+                    android:textColor="@color/heading_top"
+                    android:textSize="18sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/artistName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp12"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_toRightOf="@+id/req_id_txt"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Technician: Farid"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp">
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="91dp"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/black_rounded_btn">
+
+                    <TextView
+                        android:id="@+id/tvWork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Residential"
+                        android:textColor="@color/heading_top"
+                        android:textSize="@dimen/sp12">
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginTop="@dimen/dp14"
+                android:background="#F5F5F5">
+            </View>
+
+
+            <RelativeLayout
+                android:id="@+id/req_main_rel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp14"
+                android:layout_marginEnd="@dimen/dp20">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/req_ser_img_card"
+                    android:layout_width="@dimen/dp67"
+                    android:layout_height="56dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="@dimen/dp5">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/ivArtist"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/profile"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+                        </ImageView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp17"
+                    android:layout_toRightOf="@+id/req_ser_img_card"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/req_service_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="CCTV Required"
+                            android:textColor="@color/cat_heading"
+                            android:textSize="18sp">
+                        </TextView>
+
+                        <RatingBar
+                            android:id="@+id/complete_rating"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:rating="4"
+                            android:visibility="gone">
+                        </RatingBar>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp12"
+                        android:layout_toRightOf="@+id/price_layout"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp14"
+                            android:layout_height="@dimen/dp14"
+                            android:src="@drawable/ic_graypin"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12.7dp"
+                            android:layout_marginTop="-3dp"
+                            android:text="Location:"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp12"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp2"
+                            android:layout_marginTop="-3dp"
+                            android:text="Faisalabad city floor no #12"
+                            android:textColor="@color/cat_sub_heading"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top_price_layout"
+                    android:layout_width="58dp"
+                    android:layout_height="@dimen/dp22"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/req_service_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/robotobold"
+                        android:text="$5,000"
+                        android:textColor="@color/heading_top"
+                        android:textSize="14sp">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_below="@+id/req_ser_img_card"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="#F5F5F5"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_in_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp12"
+                        android:layout_height="@dimen/dp12"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_progress"></ImageView>
+
+                    <TextView
+                        android:id="@+id/response_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp6"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="In Progress...."
+                        android:textColor="#F7A63D"
+                        android:textSize="@dimen/sp12"></TextView>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_complete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginEnd="56dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp12"
+                            android:layout_height="@dimen/dp12"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_completed"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp6"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="Completed"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/sp12"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rate_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp12"
+                            android:layout_height="@dimen/dp12"
+                            android:layout_gravity="center"
+                            android:src="@drawable/staractive"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp6"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="Rate it now"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/sp12"></TextView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/complete_price_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/robotobold"
+                        android:text="$5,000"
+                        android:textColor="@color/heading_top"
+                        android:textSize="14sp"
+                        android:visibility="gone">
+
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

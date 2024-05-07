@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_con"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/main_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16">
+
+            <ImageView
+                android:id="@+id/tc_img"
+                android:layout_width="@dimen/dp46"
+                android:layout_height="@dimen/dp42"
+                android:src="@drawable/ic_cat_name"></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp17"
+                android:layout_toRightOf="@+id/tc_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Residential"
+                    android:textColor="@color/heading_top"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Hire a Locksmitch"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp">
+
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+        <include
+            android:id="@+id/cat_click"
+            android:layout_below="@+id/main_cat"
+            layout="@layout/tech_view_service_list"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp10">
+        </include>
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

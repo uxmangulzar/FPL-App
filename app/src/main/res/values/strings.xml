@@ -1,0 +1,537 @@
+<resources>
+    <string name="app_name">FPL</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_right_drawer">Right Drawer</string>
+    <string name="search_here">Search By Service</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="welcome">Welcome</string>
+    <string name="google_map_key">AIzaSyD9Z7v1nUorpekKz263VgE0B6BnCRWJbzA</string>
+    <string name="facebook_app_id" translatable="false">372707846617824</string>
+    <string name="facebook_login_protocol_scheem">fb372707846617824</string>
+    <string name="app_nameone" translatable="false">FPL</string>
+    <string name="permission_pick_rationale">READ_EXTERNAL_STORAGE permission is needed to pick image.</string>
+    <string name="permission_crop_rationale">WRITE_EXTERNAL_STORAGE permission is needed to save cropped image.</string>
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="update_profile_wait">Please wait your image upload in progress...</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="hindi">Hindi</string>
+    <string name="intro_1">Search your nearby \n Make-up Dentist \n and Hair Stylish.</string>
+    <string name="intro_2">Make yourself more beatiful more than you think.</string>
+    <string name="intro_3">Hire the best Phtographer &amp; create your moment.</string>
+    <string name="internet_concation">Please enable your internet connection.</string>
+    <string name="server_error">Unable to connect server.</string>
+    <string name="closeMsg">Are your sure you want to close FPL?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="jobs_completed">Jobs Completed</string>
+    <string name="del_account">Are you sure you want to delete account?</string>
+    <string name="completion">% Completion</string>
+    <string name="hr_add_on">/hr Add On :</string>
+    <string name="fixed_rate_add_on">fixed rate Add On :</string>
+    <string name="reviews">REVIEW(</string>
+    <string name="book_artist">Book Dentist</string>
+    <string name="book_msg">Are you sure to book</string>
+    <string name="chats">Chat</string>
+    <string name="join_fpl">Join FPL</string>
+    <string name="store">Store</string>
+    <string name="val_comment">Please enter comment</string>
+    <string name="take_image">FPL : Take Image From</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="val_des">Please enter description.</string>
+    <string name="val_address">Please select address.</string>
+    <string name="val_title">Please enter title.</string>
+    <string name="select_category">Select Category</string>
+    <string name="val_email">Please enter valid email id.</string>
+    <string name="location_enabled">Couldn\'t get the location. Make sure location is enabled on the device</string>
+    <string name="artist_here">Dentist here</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="cash_payment">Cash Payment</string>
+    <string name="cash_msg">Are you sure want to do cash payment?</string>
+    <string name="val_category">Please select category.</string>
+    <string name="val_price">Please enter price.</string>
+    <string name="val_qty_0">Please enter valid qty not 0 or negative</string>
+    <string name="val_qty">Please enter quantity.</string>
+    <string name="val_pass">Password must contain at least six characters.</string>
+    <string name="val_pass1">Renter password contain at least six characters.</string>
+    <string name="val_name">Please enter name.</string>
+    <string name="val_fname">Please enter first name.</string>
+    <string name="val_lname">Please enter last name.</string>
+
+    <string name="pass_not_match">Password dose not match.</string>
+    <string name="pending">Pending</string>
+    <string name="accepted">Accepted</string>
+    <string name="rejected">Rejected</string>
+    <string name="completed">Completed</string>
+    <string name="decline">Decline</string>
+    <string name="decline_msg">Are you sure you want to decline this appointment?</string>
+    <string name="waiting_artist">Waiting for artist response</string>
+    <string name="request_acc">Request accepted by artist</string>
+    <string name="work_inpro">In progress</string>
+    <string name="booking_with">Booking With</string>
+    <string name="booking_cancel_msg">Are you sure to cancel booking with</string>
+    <string name="date">Date:</string>
+    <string name="applied">Applied</string>
+    <string name="confirm">Confirm</string>
+    <string name="approved">Approved</string>
+    <string name="complete">Complete</string>
+    <string name="inprogress">Inprogress</string>
+    <string name="reject">Reject</string>
+    <string name="reject_msg">Are you sure you want to reject the application?</string>
+    <string name="confirm_msg">Are you sure you want to confirm the application?</string>
+    <string name="complete_msg">Are you sure you want to complete the application?</string>
+    <string name="km">KM From You</string>
+    <string name="job_id">Request Id:</string>
+    <string name="open">Open</string>
+    <string name="not_edit_job">You can\'t edit this request because Dentist have already applied</string>
+    <string name="delete">Delete</string>
+    <string name="delete_job">Are you sure to delete this request?</string>
+    <string name="complete_job">Are you sure to complete this request?</string>
+    <string name="service">Service #</string>
+    <string name="unpaid">Unpaid</string>
+    <string name="paid">Paid</string>
+    <string name="duration">DURATION:</string>
+    <string name="solve">Solve</string>
+    <string name="close">Close</string>
+    <string name="future_bookings">Future Bookings</string>
+    <string name="all_category">ALL CATEGORIES</string>
+    <string name="get_discount">Get Offer</string>
+    <string name="code_copy">Code Copy</string>
+    <string name="my_code">Hello, this is my Referral Code</string>
+    <string name="opps_share">Opps!! It seems that you have not installed any sharing app.</string>
+    <string name="invoice">Invoice</string>
+    <string name="ic_wallet">Wallet</string>
+    <string name="ic_payment">Payment</string>
+    <string name="fabartist">FPL</string>
+    <string name="jobs">Post Request</string>
+    <string name="notification">Notifications</string>
+    <string name="profile_settings">Profile Settings</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="logout_msg">Are you sure you want to logout?</string>
+    <string name="support">Support</string>
+    <string name="home">Services</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="applied_job">Applied Request</string>
+    <string name="search_by_artist">Search By Dentist</string>
+    <string name="no_application_found">NO APPLICATION FOUND</string>
+    <string name="no_service_found">
+        Sell your products and services in 3 simple steps!\n
+        1. Create your store\n
+        2. Customize products and services\n
+        3. Set prices\n\nStart selling right away!\nAll FPL must be submitted for approval and meet our "terms and conditions" in order to go live.
+
+    </string>
+    <string name="book_now">BOOK NOW</string>
+    <string name="quick_chat">QUICK CHAT</string>
+    <string name="future_book">FUTURE BOOK</string>
+    <string name="image_gallery">IMAGE GALLERY</string>
+    <string name="video_gallery">VIDEO GALLERY</string>
+    <string name="no_video_available">No Video Available</string>
+    <string name="about">ABOUT</string>
+    <string name="qualification">QUALIFICATION</string>
+    <string name="skills">SKILLS</string>
+    <string name="products">PRODUCTS</string>
+    <string name="privious_work">PREVIOUS WORK</string>
+    <string name="no_chat_history_found">NO CHAT HISTORY FOUND</string>
+    <string name="comment">Comment</string>
+    <string name="write_your_message">Write your message</string>
+    <string name="update_job">Update Request</string>
+    <string name="all_categories">ALL CATEGORIES</string>
+    <string name="title">Title</string>
+    <string name="address">Address</string>
+    <string name="enter_your_description">Enter Your Description</string>
+    <string name="update_picture">Update Picture</string>
+    <string name="update">Update</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="email_id">Email Id</string>
+    <string name="submit">Submit</string>
+    <string name="apply_code">APPLY CODE</string>
+    <string name="copy">COPY</string>
+    <string name="invite_friend">Invite Friend</string>
+    <string name="map">Map</string>
+    <string name="no_booking_found">NO BOOKING FOUND</string>
+    <string name="no_notification_found">NO NOTIFICATION FOUND</string>
+    <string name="payment">Payment</string>
+    <string name="work_completed">WORK COMPLETED</string>
+    <string name="apply_coupon_code">Apply Coupon Code</string>
+    <string name="write_code_here">Write Code Here</string>
+    <string name="total_amount">TOTAL AMOUNT</string>
+    <string name="online_payment">ONLINE PAYMENT</string>
+    <string name="or">OR</string>
+    <string name="cash_payment1">CASH PAYMENT</string>
+    <string name="post_job">Post Requests</string>
+    <string name="price">Price</string>
+    <string name="budget">Budget</string>
+    <string name="add_picture">Add Picture</string>
+    <string name="post">Post</string>
+    <string name="profile_picture">PROFILE PICTURE</string>
+    <string name="change">Change</string>
+    <string name="personal_information">PERSONAL INFORMATION</string>
+    <string name="full_name">FULL NAME</string>
+    <string name="email_address">EMAIL ADDRESS</string>
+    <string name="mobile_number">MOBILE NUMBER</string>
+    <string name="gender">GENDER</string>
+    <string name="password_change">PASSWORD CHANGE</string>
+    <string name="set_address">SET ADDRESS</string>
+    <string name="enter_your_address">ENTER YOUR ADDRESS</string>
+    <string name="city">CITY</string>
+    <string name="country">COUNTRY</string>
+    <string name="set_location">SET LOCATION</string>
+    <string name="signout">SignOut</string>
+    <string name="promotion">Promotion</string>
+    <string name="apply_code1">Apply Code</string>
+    <string name="email_address1">Email Address</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgotten_password">Forgot Password</string>
+    <string name="didn_t_have_any_account">Don’t have an account?</string>
+    <string name="first_name">First name</string>
+    <string name="enter_password_again">Enter Password Again</string>
+    <string name="do_you_have_an_account_already">If you already have an account?</string>
+    <string name="write_review">Write Review</string>
+    <string name="your_review">Your Review*</string>
+    <string name="services_type">Services type:</string>
+    <string name="accept">ACCEPT OFFER</string>
+    <string name="reject1">REJECT</string>
+    <string name="artist_will_soon">Dentist will soon</string>
+    <string name="complete1">COMPLETE</string>
+    <string name="edit">EDIT</string>
+    <string name="decline1">DECLINE</string>
+    <string name="cancel_booking">CANCEL BOOKING</string>
+    <string name="working_time">Working Time</string>
+    <string name="finish_job">FINISH JOB</string>
+    <string name="delete1">DELETE</string>
+    <string name="pay_now">PAY NOW</string>
+    <string name="review_by">REVIEW BY</string>
+    <string name="jobs_done">Jobs Done</string>
+    <string name="completion1">Completion</string>
+    <string name="get_your_best_service_from_us">Get your best service from us</string>
+    <string name="add_title">Add Title</string>
+    <string name="enter_title">Enter Title *</string>
+    <string name="cancel1">CANCEL</string>
+    <string name="add">ADD</string>
+    <string name="save">SAVE</string>
+    <string name="old_password">OLD PASSWORD</string>
+    <string name="new_password">NEW PASSWORD</string>
+    <string name="confirm_password">CONFIRM PASSWORD</string>
+    <string name="payment_option">Payment Option</string>
+    <string name="select">Select</string>
+    <string name="no_appointment_found">NO APPOINTMENT FOUND</string>
+    <string name="no_artist_found">No Dentist AgaFound</string>
+    <string name="no_artist_f">No Dentist Found Against this Service</string>
+    <string name="nearby">NEARBY</string>
+    <string name="discover">DISCOVER</string>
+    <string name="search_by_job">Search By Request Title</string>
+    <string name="no_jobs_found">NO requests found</string>
+    <string name="fit_image">FIT IMAGE</string>
+    <string name="square">SQUARE</string>
+    <string name="free">FREE</string>
+    <string name="circle">CIRCLE</string>
+    <string name="circle_square">CIRCLE_SQUARE</string>
+    <string name="search_by_invoice">Search By InvoiceId</string>
+    <string name="no_history_found">NO HISTORY FOUND</string>
+    <string name="no_ticket_found">NO TICKET FOUND</string>
+    <string name="job_done_for">JOB DONE FOR</string>
+
+    <string name="wallet_balance">WALLET BALANCE</string>
+    <string name="add_payment_method">ADD PAYMENT METHOD</string>
+    <string name="all">All</string>
+    <string name="debit">Debit</string>
+    <string name="credit">Credit</string>
+    <string name="money">+ MONEY</string>
+    <string name="add_money">Add Money</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="val_money">Please enter money to add..</string>
+    <string name="pay_by_wallet">PAY BY WALLET</string>
+    <string name="wallet_payment">Wallet Payment</string>
+    <string name="wallet_msg">Are you sure want to do wallet payment?</string>
+    <string name="title_activity_select_screen">SelectScreen</string>
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$)</string>
+    <string name="action_camera">Camera</string>
+    <string name="action_gallery">Choose from gallery</string>
+    <string name="label_select_img">Select image</string>
+
+    <string name="acc">Accepted</string>
+    <string name="rej">Rejected</string>
+    <string name="com">Completed</string>
+    <string name="dec">Decline</string>
+    <string name="dec_msg">Are you sure you want to decline this appointment?</string>
+    <string name="acc_msg">Are you sure you want to Accept this appointment?</string>
+    <string name="comp">Complete</string>
+    <string name="close_msg">Are your sure you want to close FPL?</string>
+
+    <string name="my_profile">Profile</string>
+    <string name="select_img">Select Image From</string>
+    <string name="select_pic">Select Picture</string>
+    <string name="jobs_comleted">Jobs Completed</string>
+
+    <string name="online">ONLINE</string>
+    <string name="offline">OFFLINE</string>
+    <string name="review">REVIEW</string>
+    <string name="F">Hourly Rate</string>
+    <string name="rate">Rate</string>
+    <string name="hr">/hr</string>
+    <string name="fix_rate">Fix Rate</string>
+    <string name="fixed_rate">fixed rate</string>
+    <string name="commis_msg">FPL Dentist commission will be added into your hourly rate. It will vary according to category selection. Category rate :</string>
+    <string name="select_cate">Select Category</string>
+    <string name="val_cat_sele">Please select category.</string>
+    <string name="val_bio">Please enter bio.</string>
+    <string name="val_location">Please enter location.</string>
+    <string name="val_rate">Please enter rate.</string>
+    <string name="val_youtube_url">Please enter youtube url.</string>
+
+    <string name="val_pass3">Password dose not match.</string>
+    <string name="my_appoin">My Appointments</string>
+    <string name="customer_booking">Current Booking</string>
+    <string name="dec_cpas">DECLINE</string>
+
+    <string name="referral_msg">Hello, this is my Referral Code</string>
+    <string name="opss_share">Opps!! It seems that you have not installed any sharing app.</string>
+
+    <string name="notifications">Notifications</string>
+    <string name="my_earnings">Your Earnings</string>
+    <string name="earning_graph">Earning Graph</string>
+    <string name="process_payment">Are you sure want to process your payment?</string>
+    <string name="job_title">FPL Title:</string>
+
+    <string name="inprogres">Inprogress</string>
+
+    <string name="start_app">Are you sure do you want to start the application?</string>
+    <string name="start">Start</string>
+
+    <string name="payment1">Payment ?</string>
+    <string name="select_your_payment_mode">Select your payment mode</string>
+
+    <string name="set_home_address">HOME</string>
+    <string name="set_office_address">ADD WORK</string>
+
+
+    <string name="apply">APPLY</string>
+    <string name="start_job">Start FPL</string>
+    <string name="add_video_url">Add Video Url</string>
+    <string name="enter_youtube_url">Enter Youtube Url *</string>
+    <string name="apply_job">APPLY JOB</string>
+    <string name="write_description">WRITE DESCRIPTION</string>
+    <string name="edit_about_me">EDIT ABOUT ME</string>
+    <string name="add_gallery">ADD GALLERY</string>
+    <string name="edit_personal_information">EDIT PERSONAL INFORMATION</string>
+    <string name="select_your_speciality">SELECT YOUR SPECIALITY</string>
+    <string name="your_name">YOUR NAME</string>
+    <string name="your_bio">YOUR BIO</string>
+    <string name="your_city">YOUR CITY</string>
+    <string name="your_country">YOUR COUNTRY</string>
+    <string name="your_location">YOUR LOCATION</string>
+    <string name="add_product">ADD PRODUCT</string>
+    <string name="product_name">PRODUCT NAME</string>
+    <string name="add_qualification">ADD QUALIFICATION</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="add_skills">ADD SKILLS</string>
+    <string name="search_by_cus">Search By FPL</string>
+    <string name="no_jobs_applied">NO FPL APPLIED</string>
+    <string name="new_request_found">NEW REQUEST FOUND</string>
+    <string name="start_job1">START JOB</string>
+    <string name="finish_the_job">FINISH THE JOB</string>
+    <string name="work_in_progress">Work in progress</string>
+    <string name="no_request_found">NO REQUEST FOUND</string>
+    <string name="paid1">PAID</string>
+    <string name="unpaid1">UNPAID</string>
+    <string name="all_jobs">ALL FPL</string>
+    <string name="applied_jobs">APPLIED FPL</string>
+    <string name="this_week">This Week</string>
+    <string name="online_earning">Online Earning</string>
+    <string name="cash_earning">Cash Earning</string>
+    <string name="total_earning">Total Earning</string>
+    <string name="job_done">FPL Done</string>
+    <string name="total_job">Total FPL</string>
+    <string name="wallet_amount">Wallet Amount</string>
+    <string name="request_payment">Request payment</string>
+    <string name="select_image">SELECT IMAGE</string>
+    <string name="my_rate">MY RATE</string>
+    <string name="hour_rate">Hourly Rate</string>
+    <string name="otp_sending">Sending OTP</string>
+    <string name="otp_verifying">Verifying OTP</string>
+    <string name="otp_sending_msg">One time password is sending to %s</string>
+    <string name="otp_verifying_msg">Verifying OTP...</string>
+    <string name="error_detail">Error in Detail!</string>
+    <string name="settings">Settings</string>
+    <string name="internet_error">Please check your internet connection and try again</string>
+    <string name="error_title">Internet Warning!</string>
+    <string name="gps">Gps Location mandatory for App</string>
+    <string name="str_error_u">error uploading in server</string>
+
+
+    <string-array name="list_of_states">
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+    </string-array>
+    <string-array name="list_of_categories">
+        <item>Residential</item>
+        <item>Commercial</item>
+        <item>Automotive</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="list_of_sub_category_residential">
+        <item>Access Control System</item>
+        <item>CCTV</item>
+        <item>Intercom System</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="list_of_sub_category_commercial">
+        <item>Audit Trail System</item>
+        <item>Biometric Fingerprint Systems</item>
+        <item>CCTV</item>
+        <item>Electric Strikes</item>
+        <item>Intercom System</item>
+        <item>Proximity Readers</item>
+        <item>Magnetic Locks</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="list_of_sub_category_automative">
+        <item>Car Key Making</item>
+        <item>Car Key Programming</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="list_of_topics">
+        <item>Choose topic</item>
+        <item>General</item>
+        <item>Technical Issue</item>
+        <item>Account</item>
+        <item>Problem with Specific Job</item>
+    </string-array>
+    <string-array name="list_of_licence_required">
+        <item>Alabama</item>
+        <item>California</item>
+        <item>Connecticut</item>
+        <item>Illinois</item>
+        <item>Louisiana</item>
+        <item>Maryland</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Jersey</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Virginia</item>
+    </string-array>
+    <string-array name="list_of_licence_not_required">
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>Colorado</item>
+        <item>Delaware</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Maine</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>New Hampshire</item>
+        <item>New Mexico</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+    </string-array>
+    <string-array name="str_available_states">
+        <item>Alabama</item>
+        <item>California</item>
+        <item> Connecticut</item>
+        <item>Illinois</item>
+        <item>Louisiana</item>
+        <item>Maryland</item>
+        <item>Nebraska</item>
+        <item> Nevada</item>
+        <item> New Jersey</item>
+        <item> North Carolina</item>
+        <item> Oklahoma</item>
+        <item>Oregon</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Virginia</item>
+
+    </string-array>
+
+</resources>

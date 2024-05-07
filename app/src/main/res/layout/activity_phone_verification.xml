@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="40dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp">
+
+        <!-- <ImageView
+             android:id="@+id/back"
+             android:layout_width="24dp"
+             android:layout_height="24dp"
+             android:layout_marginBottom="10dp"
+             android:visibility="gone"
+             android:src="@drawable/ic_keyboard_arrow_left_white_36dp" />
+
+ -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Confirm Your Number"
+            android:fontFamily="@font/robotobold"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/top_bar"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/verificationHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Verification Code"
+            android:fontFamily="@font/robotobold"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/verificationMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/dp16"
+            android:gravity="center"
+            android:textColor="#000"
+            android:fontFamily="@font/robotoregular"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/otp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/edittext_colorfull_join_fpl"
+            android:gravity="center"
+            android:hint="_ _ _ _ _ _"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/gray"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp8"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Resend Code?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/robotoregular" />
+
+        <TextView
+            android:id="@+id/changeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Change Number?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/robotoregular" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_sign_in"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</LinearLayout>

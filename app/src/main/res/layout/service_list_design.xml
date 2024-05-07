@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp16"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/cp_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp16">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/icon_img">
+                <ImageView
+                    android:id="@+id/s_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/cat_list_img_one"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                </ImageView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_toRightOf="@+id/cp_layout"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/service_name"
+                    android:textSize="18sp"
+                    android:textColor="@color/cat_heading"
+                    android:fontFamily="@font/robotomedium"
+                    android:text="House Lockout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:textColor="@color/cat_sub_heading"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Get best service at you Home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginEnd="@dimen/dp16"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/service_price"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotobold"
+                android:text="$50.00"
+                android:textColor="@color/cat_heading"
+                android:textSize="12sp"></TextView>
+
+            <RelativeLayout
+                android:id="@+id/suggest_service_btn"
+                android:layout_gravity="center"
+                android:layout_width="96dp"
+                android:layout_height="@dimen/dp25"
+                android:layout_marginTop="@dimen/dp7"
+                android:background="@drawable/ticket_btn">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Suggest Service"
+                    android:textColor="#F05A29"
+                    android:textSize="10sp"></TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

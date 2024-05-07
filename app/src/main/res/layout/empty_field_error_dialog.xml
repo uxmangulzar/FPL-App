@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel"
+    android:background="@android:color/transparent">
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp60"
+        android:id="@+id/sq_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbg">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp20">
+            <TextView
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp70"
+                android:textColor="@color/qty_color"
+                android:fontFamily="@font/brotherbold"
+                android:text="Field Can't be Empty!"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:layout_marginTop="@dimen/dp16"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/robotoregular"
+                android:text="Some of the fields are empty. Please fill up your information "
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/gray"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="on the correct fields to continue"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            <RelativeLayout
+                android:id="@+id/continue_btn"
+                android:background="@drawable/get_service_btn"
+                android:layout_marginTop="29dp"
+                android:layout_below="@+id/q_btn_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45">
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/robotoregular"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continue">
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp24"
+        android:src="@drawable/cancel"
+        android:layout_width="74dp"
+        android:layout_height="74dp">
+    </ImageView>
+</RelativeLayout>

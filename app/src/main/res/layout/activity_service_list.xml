@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical"
+        tools:context=".Dentist.ui.activity.ServiceListActivity">
+
+        <RelativeLayout
+            android:id="@+id/add_ticket_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <ImageView
+                android:layout_width="@dimen/dp18"
+                android:layout_height="@dimen/dp18"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp16"
+                android:src="@drawable/ic_arrowback">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/robotobold"
+                android:text="Service List"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp">
+            </TextView>
+        </RelativeLayout>
+
+        <include layout="@layout/search_service_layout">
+        </include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp16">
+
+            <RelativeLayout
+                android:id="@+id/tc_img"
+                android:layout_width="@dimen/dp46"
+                android:layout_height="@dimen/dp42"
+                android:background="@drawable/bg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_iconhome">
+                </ImageView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp17"
+                android:layout_toRightOf="@+id/tc_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Resedential"
+                    android:textColor="@color/heading_top"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="You can suggest service to your client"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp">
+
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tvNo_Resi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Service Added!"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/residential_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp16">
+
+            <RelativeLayout
+                android:id="@+id/tc_img1"
+                android:layout_width="@dimen/dp46"
+                android:layout_height="@dimen/dp42"
+                android:background="@drawable/bg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_icondashboard"></ImageView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp17"
+                android:layout_toRightOf="@+id/tc_img1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Commercial"
+                    android:textColor="@color/heading_top"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="You can suggest service to your client"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp">
+
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tvNo_Comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Service Added!"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commercial_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp16">
+
+            <RelativeLayout
+                android:id="@+id/tc_img2"
+                android:layout_width="@dimen/dp46"
+                android:layout_height="@dimen/dp42"
+                android:background="@drawable/bg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_car"></ImageView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp17"
+                android:layout_toRightOf="@+id/tc_img2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Automotive"
+                    android:textColor="@color/heading_top"
+                    android:textSize="18sp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="You can suggest service to your client"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp">
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tvNo_Auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Service Added!"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/automotive_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

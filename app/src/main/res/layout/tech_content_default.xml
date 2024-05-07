@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/tech_app_bar_default">
+
+
+    <LinearLayout
+        android:id="@+id/tech_frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_Tech"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:visibility="gone"
+            android:id="@+id/tech_appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#F9F9F9"
+                >
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_marginStart="@dimen/dp6"
+                        android:id="@+id/tech_menuBtn"
+                        android:layout_width="@dimen/dp50"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp18"
+                            android:layout_height="@dimen/dp18"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_menu"></ImageView>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tech_toolbar_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/robotobold"
+                        android:text="Home"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22sp"></TextView>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/dp50"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp20"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_notification"></ImageView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <include
+            android:visibility="gone"
+            android:id="@+id/tech_search_bar"
+            layout="@layout/search_bar_design">
+        </include>
+        <!-- Tech Home Fragment Layout design -->
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bottom_Tech"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/tc_home"
+                style="@style/bottom_bar_single_item_layout_style">
+
+                <ImageView
+                    android:id="@+id/tc_home_icon"
+                    style="@style/bottom_bar_icon_style"
+                    android:src="@drawable/ic_homecolor"
+                    android:layout_gravity="center">
+                </ImageView>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/tc_home_txt"
+                    style="@style/tech_bottom_bar_text_style"
+                    android:text="Home"
+                    android:textColor="@color/colorPrimary">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tc_chat"
+                style="@style/bottom_bar_single_item_layout_style">
+
+                <ImageView
+                    android:id="@+id/tc_chat_icon"
+                    style="@style/bottom_bar_icon_style"
+                    android:src="@drawable/ic_chat"
+                    android:layout_gravity="center">
+                </ImageView>
+
+                <TextView
+                    android:textAlignment="center"
+                    style="@style/tech_bottom_bar_text_style"
+                    android:text="Chat"
+                    android:id="@+id/tc_chat_txt"
+                    >
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tc_earnings"
+                style="@style/bottom_bar_single_item_layout_style">
+
+                <ImageView
+                    android:id="@+id/tc_earning_icon"
+                    style="@style/bottom_bar_icon_style"
+                    android:src="@drawable/ic_doller"
+                    android:layout_gravity="center">
+                </ImageView>
+
+                <TextView
+                    android:textAlignment="center"
+                    style="@style/tech_bottom_bar_text_style"
+                    android:text="My Earnings"
+                    android:id="@+id/tc_earning_txt"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tc_booking"
+                style="@style/bottom_bar_single_item_layout_style">
+
+
+                <ImageView
+                    android:id="@+id/tc_booking_icon"
+                    style="@style/bottom_bar_icon_style"
+                    android:src="@drawable/ic_booking"
+                    android:layout_gravity="center">
+                </ImageView>
+
+                <TextView
+                    android:textAlignment="center"
+                    style="@style/tech_bottom_bar_text_style"
+                    android:text="Booking"
+                    android:id="@+id/tc_booking_txt"
+                    >
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tc_settings"
+                style="@style/bottom_bar_single_item_layout_style">
+
+                <ImageView
+                    android:id="@+id/tc_setting_icon"
+                    style="@style/bottom_bar_icon_style"
+                    android:src="@drawable/ic_sett"
+                    android:layout_gravity="center">
+                </ImageView>
+
+                <TextView
+                    android:textAlignment="center"
+                    style="@style/tech_bottom_bar_text_style"
+                    android:text="Settings"
+                    android:id="@+id/tc_setting_txt"
+                    >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

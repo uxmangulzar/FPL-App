@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/user_app_bar_default">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginBottom="@dimen/dp40"
+                android:orientation="vertical"
+                android:id="@+id/frame_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/white"
+            app:elevation="2dp"
+            app:fabAlignmentMode="center"
+            app:fabCradleMargin="@dimen/dp10"
+            app:fabCradleRoundedCornerRadius="@dimen/dp20"
+            app:fabCradleVerticalOffset="@dimen/dp3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout style="@style/bottom_bar_single_item_layout_style">
+
+                        <ImageView
+                            android:id="@+id/home_icon"
+                            style="@style/bottom_bar_icon_style"
+                            android:layout_marginStart="12.5dp"
+                            android:src="@drawable/ic_homecolor"></ImageView>
+
+                        <TextView
+                            android:id="@+id/home_txt"
+                            style="@style/bottom_bar_text_style"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginStart="@dimen/dp10"
+                            android:text="Home"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bottom_bar_single_item_layout_style">
+
+                        <ImageView
+                            android:id="@+id/chat_icon"
+                            style="@style/bottom_bar_icon_style"
+                            android:layout_marginStart="11dp"
+                            android:src="@drawable/ic_chat"></ImageView>
+
+                        <TextView
+                            android:id="@+id/chat_txt"
+                            style="@style/bottom_bar_text_style"
+                            android:layout_marginStart="@dimen/dp11"
+                            android:text="Chat"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bottom_bar_single_item_layout_style">
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bottom_bar_single_item_layout_style">
+
+                        <ImageView
+                            android:id="@+id/booking_icon"
+                            style="@style/bottom_bar_icon_style"
+                            android:layout_marginStart="25dp"
+                            android:src="@drawable/ic_booking"></ImageView>
+
+                        <TextView
+                            android:id="@+id/booking_txt"
+                            style="@style/bottom_bar_text_style"
+                            android:layout_marginStart="@dimen/dp10"
+                            android:text="My Booking"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bottom_bar_single_item_layout_style">
+
+                        <ImageView
+                            android:id="@+id/setting_icon"
+                            style="@style/bottom_bar_icon_style"
+                            android:layout_marginStart="18dp"
+                            android:src="@drawable/ic_sett"></ImageView>
+
+                        <TextView
+                            android:id="@+id/setting_txt"
+                            style="@style/bottom_bar_text_style"
+                            android:layout_marginStart="@dimen/dp10"
+                            android:text="Settings"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_edit"
+            app:borderWidth="0dp"
+            app:fabCustomSize="57dp"
+            app:layout_anchor="@id/bottom_app_bar"
+            app:tint="#ffffff" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

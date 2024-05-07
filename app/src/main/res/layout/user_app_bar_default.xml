@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#F9F9F9">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_marginStart="@dimen/dp6"
+                    android:id="@+id/menuBtn"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp18"
+                        android:layout_height="@dimen/dp18"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_menu"></ImageView>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/toolbar_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Home"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp"></TextView>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_notification"></ImageView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/user_content_default" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".ui.activity.ChatActivity">
+
+    <RelativeLayout
+        android:id="@+id/ctbl"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="@dimen/dp18"
+            android:layout_height="@dimen/dp18"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp16"
+            android:src="@drawable/ic_arrowback">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/robotobold"
+            android:text="Abby"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp16"
+            android:src="@drawable/ic_baseline_more_vert_24">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ctbl"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingTop="@dimen/dp16"
+                android:paddingBottom="@dimen/dp16"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginEnd="23dp"
+                    android:padding="@dimen/dp8"
+                    android:background="@drawable/chat_wrtie_design">
+
+                    <ImageView
+                        android:id="@+id/plus_btn"
+                        android:layout_width="31dp"
+                        android:layout_height="31dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:src="@drawable/plus">
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/dp15"
+                        android:layout_marginEnd="@dimen/dp16"
+                        android:layout_toRightOf="@+id/plus_btn">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/robotoregular"
+                            android:hint="Please Write Here"
+                            android:inputType="textMultiLine"
+                            android:textColor="#4B4B4B"
+                            android:textColorHint="#4B4B4B"
+                            android:textSize="@dimen/sp12">
+                        </EditText>
+
+                        <ImageView
+                            android:id="@+id/send_btn"
+                            android:layout_width="@dimen/dp27"
+                            android:layout_height="@dimen/dp27"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/dp6"
+                            android:src="@drawable/send">
+                        </ImageView>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

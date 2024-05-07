@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel"
+    android:background="@android:color/transparent">
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp60"
+        android:id="@+id/sq_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp60"
+                android:fontFamily="@font/brotherbold"
+                android:text="New States Coming Soon!"
+                android:textAlignment="center"
+                android:textColor="@color/qty_color"
+                android:textSize="20sp"></TextView>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotoregular"
+                android:text="Please Subscribes for Updates"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="12sp"></TextView>
+
+            <RelativeLayout
+                android:id="@+id/subscribe_new_state"
+                android:layout_width="320dp"
+                android:layout_height="@dimen/dp45"
+                android:layout_below="@+id/q_btn_lay"
+                android:layout_marginTop="29dp"
+                android:background="@drawable/get_service_btn">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Subscribe"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"></TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp24"
+        android:src="@drawable/stateerror"
+        android:layout_width="74dp"
+        android:layout_height="74dp">
+    </ImageView>
+</RelativeLayout>

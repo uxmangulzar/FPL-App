@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="122dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/logo">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/brotherbold"
+                android:text="Welcome Back to FPL"
+                android:textColor="@color/black"
+                android:textSize="25sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="Sign in to Get Started"
+                android:textColor="@color/gray"
+                android:textSize="15sp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/f_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp90"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/dp10"
+                    app:cardElevation="@dimen/dp3"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp20"
+                            android:layout_marginTop="@dimen/dp13"
+                            android:fontFamily="@font/robotomedium"
+                            android:text="Email"
+                            android:textColor="@color/gray"
+                            android:textSize="13sp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp20"
+                                android:layout_height="@dimen/dp20"
+                                android:layout_marginStart="@dimen/dp20"
+                                android:layout_marginTop="@dimen/dp10"
+                                android:src="@drawable/icemail">
+                            </ImageView>
+
+                            <EditText
+                                android:id="@+id/CETemailadd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp10"
+                                android:background="@android:color/transparent"
+                                android:hint="Enter your email"
+                                android:inputType="textEmailAddress"
+                                android:paddingStart="@dimen/dp21"
+                                android:textColor="@color/black"
+                                android:textSize="15sp">
+
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/s_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp90"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/dp10"
+                    app:cardElevation="@dimen/dp3"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp20"
+                            android:layout_marginTop="@dimen/dp13"
+                            android:fontFamily="@font/robotomedium"
+                            android:text="Password"
+                            android:textColor="@color/gray"
+                            android:textSize="13sp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="@dimen/dp20"
+                                android:layout_height="@dimen/dp20"
+                                android:layout_marginStart="@dimen/dp20"
+                                android:layout_marginTop="@dimen/dp10"
+                                android:src="@drawable/iclock">
+                            </ImageView>
+
+                            <EditText
+                                android:id="@+id/CETenterpassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp10"
+                                android:background="@android:color/transparent"
+                                android:hint="Enter your password"
+                                android:inputType="textPassword"
+                                android:paddingStart="@dimen/dp21"
+                                android:textColor="@color/black"
+                                android:textSize="15sp">
+
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_remember_me_tech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotomedium"
+                    android:text="Remember Me"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp">
+
+                </androidx.appcompat.widget.AppCompatCheckBox>
+
+                <TextView
+                    android:id="@+id/CTVBforgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="@dimen/dp8"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Forgot Password"
+                    android:textColor="@color/forget_text"
+                    android:textSize="13sp">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/CBsignIn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginEnd="@dimen/dp5"
+                android:background="@drawable/button_sign_in">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Sign In"
+                    android:textColor="@color/white"
+                    android:textSize="18sp">
+
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp16"
+            android:id="@+id/ui_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotoregular"
+                android:text="Don't Have an account?"
+                android:textColor="#171717"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/CTVsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp5"
+                android:fontFamily="@font/robotobold"
+                android:text="Sign Up"
+                android:textColor="@color/sign_up_text"
+                android:textSize="14sp">
+            </TextView>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/RRsncbar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true">
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

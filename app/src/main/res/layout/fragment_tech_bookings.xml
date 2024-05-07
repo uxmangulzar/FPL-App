@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginEnd="@dimen/dp16">
+
+            <RelativeLayout
+                android:id="@+id/tc_img"
+                android:layout_width="@dimen/dp46"
+                android:layout_height="@dimen/dp42"
+                android:background="@drawable/bg_icon">
+
+                <ImageView
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_chat"></ImageView>
+            </RelativeLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp17"
+                android:layout_toRightOf="@+id/tc_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Bookings"
+                    android:textColor="@color/heading_top"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp1"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="You can view your bookings"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp">
+
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/booking_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+        <include
+            android:visibility="gone"
+            android:id="@+id/tech_book_list_design"
+            layout="@layout/booking_list_design">
+
+        </include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no_booking_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="176dp"
+            android:layout_height="131dp"
+            android:layout_gravity="center"
+            android:src="@drawable/empty_request"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp40"
+            android:fontFamily="@font/robotobold"
+            android:text="No Bookings Yet!"
+            android:textColor="@color/heading_top"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp18"
+            android:fontFamily="@font/robotoregular"
+            android:text="You haven’t booked any jobs yet!"
+            android:textColor="@color/heading_top"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp60"
+            android:layout_marginEnd="@dimen/dp60"
+            android:fontFamily="@font/robotoregular"
+            android:text="Simply click our Services list or hit the “Nearby technicians” button to start with your first booking"
+            android:textAlignment="center"
+            android:textColor="@color/heading_top"
+            android:textSize="12sp"></TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

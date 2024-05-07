@@ -1,0 +1,128 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+    <!-- This is the style for Remove first blank white screen with our Custom Color or Image -->
+    <style name="AppTheme.CenterAnimation">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Button.Borderless" parent="Widget.AppCompat.Button.Borderless">
+
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+
+    <style name="myRatingBarStyle" parent="@android:style/Widget.RatingBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/custom_ratingbar</item>
+        <item name="android:indeterminateDrawable">@drawable/custom_ratingbar</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:mirrorForRtl">true</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/cardbg</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="navigation_txt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:layout_marginStart">@dimen/dp17</item>
+        <item name="android:layout_marginTop">@dimen/_dp4</item>
+    </style>
+
+    <style name="navigation_icons_style">
+        <item name="android:layout_width">@dimen/dp18</item>
+        <item name="android:layout_height">@dimen/dp18</item>
+
+    </style>
+
+    <style name="bottom_bar_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:layout_marginTop">@dimen/dp3</item>
+    </style>
+    <style name="tech_bottom_bar_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:layout_marginTop">@dimen/dp3</item>
+    </style>
+    <style name="join_fpl_edittext_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColorHint">@color/rate_comment_color</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:layout_marginTop">@dimen/dp15</item>
+    </style>
+    <style name="join_fpl_bottomsheet_edittext_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp40</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@color/rate_comment_color</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:layout_marginTop">@dimen/dp15</item>
+    </style>
+
+    <style name="bottom_bar_icon_style">
+        <item name="android:layout_width">@dimen/dp24</item>
+        <item name="android:layout_height">@dimen/dp24</item>
+    </style>
+
+    <style name="bottom_bar_single_item_layout_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+    <style name="CustomCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/dp20</item>
+        <item name="cornerSizeTopLeft">@dimen/dp20</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+</resources>

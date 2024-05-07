@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MapsActivity"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginEnd="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp42"
+            android:background="@drawable/button_white">
+
+            <RelativeLayout
+                android:id="@+id/bk_rel"
+                android:layout_width="@dimen/dp37"
+                android:layout_height="@dimen/dp37"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="@dimen/dp16"
+                    android:layout_height="@dimen/dp16"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrowback"></ImageView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp8"
+                android:layout_toRightOf="@+id/bk_rel"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tech_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotobold"
+                        android:text="Jhon"
+                        android:textColor="@color/colorPrimary"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp4"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="will be at your location"
+                        android:textColor="#303030"></TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tech_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="in 5 minutes"
+                    android:textColor="#303030"
+                    android:textSize="24sp"></TextView>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="-20dp"
+            android:id="@+id/map_tech_detail"
+            android:background="@drawable/cardbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp50">
+            <RelativeLayout
+                android:id="@+id/sq_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/cancel_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp16">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/robotomedium"
+                        android:text="Cancel"
+                        android:textColor="#3100FF"
+                        android:textSize="14sp">
+                    </TextView>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/choose_topic_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:fontFamily="@font/brotherbold"
+                    android:text="Technician Details"
+                    android:textColor="@color/qty_color"
+                    android:textSize="20sp">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tech_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sq_layout"
+                android:layout_marginStart="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginEnd="@dimen/dp16">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tech_img"
+                    android:layout_width="@dimen/dp65"
+                    android:layout_height="@dimen/dp65"
+                    android:src="@drawable/tech_img">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:layout_toRightOf="@+id/tech_img"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tech_full_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotomedium"
+                        android:text="Jhon Snow"
+                        android:textColor="@color/heading_top"
+                        android:textSize="@dimen/sp16"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Company Name"
+                        android:textColor="@color/third_text"
+                        android:textSize="12sp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tech_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/robotomedium"
+                        android:text="$50"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"></TextView>
+
+                    <RatingBar
+                        android:id="@+id/tech_rating"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:rating="4.5"
+                        android:stepSize="0.5"></RatingBar>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tech_img"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_toRightOf="@+id/tech_img"
+                    android:background="@color/edit_line"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pl_rel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tech_tel"
+                android:layout_marginTop="@dimen/dp16">
+
+                <LinearLayout
+                    android:id="@+id/pl_pin_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_gravity="center"
+                        android:src="@drawable/perpin"></ImageView>
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="80dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="-8dp"
+                        android:background="@drawable/vertical_dotted_line"
+                        android:layerType="software" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-16dp"
+                        android:src="@drawable/locpin">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:layout_toRightOf="@+id/pl_pin_layout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Current Location"
+                        android:textColor="@color/third_text"
+                        android:textSize="12sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/current_loc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:fontFamily="@font/robotobold"
+                        android:text="Bonarka city center"
+                        android:maxLines="1"
+                        android:textColor="@color/heading_top"
+                        android:textSize="14sp"></TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tech_img"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:background="@color/edit_line"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp24"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Origin"
+                        android:textColor="@color/third_text"
+                        android:textSize="12sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/destination_loc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:fontFamily="@font/robotobold"
+                        android:text="Martin New Home"
+                        android:maxLines="1"
+                        android:textColor="@color/heading_top"
+                        android:textSize="14sp"></TextView>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pl_rel"
+                android:layout_marginTop="@dimen/dp16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/chat_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_marginStart="@dimen/dp16"
+                        android:layout_marginEnd="@dimen/dp12"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_add_ticket">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="Chat With Technician"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"></TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/dp16"
+                        android:background="@drawable/headphone_ticket">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp22"
+                            android:layout_height="@dimen/dp22"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_icon_material_find_replace"></ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+</LinearLayout>

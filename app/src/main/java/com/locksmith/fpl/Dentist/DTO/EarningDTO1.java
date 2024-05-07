@@ -1,0 +1,109 @@
+package com.locksmith.fpl.Dentist.DTO;
+
+import java.util.ArrayList;
+
+public class EarningDTO1 {
+
+    String onlineEarning = "";
+    String cashEarning = "";
+    String walletAmount = "";
+    String totalEarning = "";
+    String jobDone = "";
+    String totalJob = "";
+    String currency_symbol = "";
+    String completePercentages = "";
+    ArrayList<ChartData> chartData = new ArrayList<>();
+
+    public String getOnlineEarning() {
+        return onlineEarning;
+    }
+
+    public void setOnlineEarning(String onlineEarning) {
+        this.onlineEarning = onlineEarning;
+    }
+
+    public String getCashEarning() {
+        return cashEarning;
+    }
+
+    public void setCashEarning(String cashEarning) {
+        this.cashEarning = cashEarning;
+    }
+
+    public String getWalletAmount() {
+        return walletAmount;
+    }
+
+    public void setWalletAmount(String walletAmount) {
+        this.walletAmount = walletAmount;
+    }
+
+    public String getTotalEarning() {
+        return totalEarning;
+    }
+
+    public void setTotalEarning(String totalEarning) {
+        this.totalEarning = totalEarning;
+    }
+
+    public String getJobDone() {
+        return jobDone;
+    }
+
+    public void setJobDone(String jobDone) {
+        this.jobDone = jobDone;
+    }
+
+    public String getTotalJob() {
+        return totalJob;
+    }
+
+    public void setTotalJob(String totalJob) {
+        this.totalJob = totalJob;
+    }
+
+    public String getCurrency_symbol() {
+        return currency_symbol;
+    }
+
+    public void setCurrency_symbol(String currency_symbol) {
+        this.currency_symbol = currency_symbol;
+    }
+
+    public String getCompletePercentages() {
+        return completePercentages;
+    }
+
+    public void setCompletePercentages(String completePercentages) {
+        this.completePercentages = completePercentages;
+    }
+
+    public ArrayList<ChartData> getChartData() {
+        return chartData;
+    }
+
+    public void setChartData(ArrayList<ChartData> chartData) {
+        this.chartData = chartData;
+    }
+
+    public class ChartData {
+        String day = "";
+        String count = "";
+
+        public String getDay() {
+            return day;
+        }
+
+        public void setDay(String day) {
+            this.day = day;
+        }
+
+        public String getCount() {
+            return count;
+        }
+
+        public void setCount(String count) {
+            this.count = count;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "417239771834",
+    "project_id": "fplapp-776e7",
+    "storage_bucket": "fplapp-776e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417239771834:android:76bc80b6f0c2c4a86bb083",
+        "android_client_info": {
+          "package_name": "com.locksmith.fpl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417239771834-f2kv2n5n2ohqube53q9k04de29fgmnfl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbt3DkLBeoj-2rSIlQRLEfbb1RDN4APUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417239771834-f2kv2n5n2ohqube53q9k04de29fgmnfl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

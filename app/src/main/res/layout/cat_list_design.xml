@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp16"
+    android:layout_marginEnd="@dimen/dp16"
+    android:layout_marginBottom="@dimen/dp16"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:backgroundTint="@color/white"
+        android:id="@+id/lastItemCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp10"
+        app:cardElevation="0dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon_img">
+
+                <ImageView
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/cat_list_img_one"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></ImageView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_toLeftOf="@+id/cat_price_txt"
+                    android:id="@+id/cat_txt_layout"
+                    android:layout_toRightOf="@+id/icon_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dp16"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:id="@+id/cat_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/robotomedium"
+                            android:text="Knob Lock 1,2 duty"
+                            android:textColor="@color/cat_heading"
+                            android:textSize="16sp"></TextView>
+
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="Get best service at you Home"
+                            android:textColor="@color/cat_sub_heading"
+                            android:textSize="12sp">
+
+                        </TextView>-->
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginEnd="19dp"
+                    android:id="@+id/cat_price_txt"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/robotobold"
+                    android:textColor="@color/colorPrimary"
+                    android:text="GGG"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

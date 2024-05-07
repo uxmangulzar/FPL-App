@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".ui.activity.RateTechnicianActivity">
+
+    <RelativeLayout
+        android:id="@+id/add_ticket_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/dp16"
+            android:src="@drawable/ic_arrowback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/robotobold"
+            android:text="Your Feedbacks"
+            android:textColor="@color/heading_top"
+            android:textSize="22sp"></TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/no_booking_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="176dp"
+            android:layout_height="131dp"
+            android:layout_gravity="center"
+            android:src="@drawable/empty_request"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp40"
+            android:fontFamily="@font/robotobold"
+            android:text="No Feedbacks yet"
+            android:textColor="@color/heading_top"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp18"
+            android:fontFamily="@font/robotoregular"
+            android:text="You Haven’t Booked any Job Yet! "
+            android:textColor="@color/heading_top"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:id="@+id/go_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp60"
+            android:layout_marginEnd="@dimen/dp60"
+            android:fontFamily="@font/robotoregular"
+            android:text="Simply click “Home” Button to start with your first job"
+            android:textAlignment="center"
+            android:textColor="@color/heading_top"
+            android:textSize="12sp"></TextView>
+
+    </LinearLayout>
+</RelativeLayout>

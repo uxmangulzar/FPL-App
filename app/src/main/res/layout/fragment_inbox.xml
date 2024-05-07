@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.InboxFragment">
+
+    <LinearLayout
+        android:id="@+id/no_msg_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="181dp"
+            android:layout_height="151dp"
+            android:layout_gravity="center"
+            android:src="@drawable/empty_msg">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp28"
+            android:fontFamily="@font/robotobold"
+            android:text="No Messages Yet!"
+            android:textColor="@color/heading_top"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp18"
+            android:fontFamily="@font/robotoregular"
+            android:text="Not sure what service you need? Hit the Chat Now"
+            android:textColor="@color/gray"
+            android:textSize="12sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp70"
+            android:layout_marginEnd="@dimen/dp70"
+            android:fontFamily="@font/robotoregular"
+            android:text="button, ask questions, upload images and get the job done!"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="12sp">
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/chat_now_btn"
+            android:layout_width="119dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/q_btn_lay"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp18"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp20"
+            android:background="@drawable/ticket_btn">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/robotobold"
+                android:text="Chat Now"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"></TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
